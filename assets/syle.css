@@ -1,42 +1,113 @@
-* {
-    box-sizing: border-box;
-    width: 100%;
+*{
+  box-sizing: border-box;
 }
 
-body {
-    position: relative;
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #181A18;
+    color: silver;
+}
+
+.page-limit {
+max-width: 90%;
+margin-left: auto;
+margin-right: auto;
 }
 
 .header {
-   padding: 10px;
-   background-color: rgb(62, 184, 221);
-   color: aliceblue;
-   display: flex;
-   flex-direction: row;
-   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 20px solid rgb(56, 56, 161);
+    border-radius: 20px;
+    background-color: rgb(169, 191, 211);
+    box-shadow: 0 0 40px rgb(238, 46, 238);
+    margin: 100px;
+    padding: 30px;
 }
 
-.header h1 {
-    font-size: 60px;
-    display: inline-block;
-    margin-left: 40px;
-   
+.header > a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    margin-top: 20px;
+    text-shadow: 0 0 20px rgb(238, 46, 238);;
 }
 
-.header ul {
+.header > h1 {
+    font-size: 80px;
+    color: black;
+    text-shadow: 0 0 20px rgb(238, 46, 238);;
+}
+
+.flex-about {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.header li {
-    display: inline-block;
-    font-size: 35px;
-    margin-top: 40px;
+.flex-about h2 {
+    font-size: 40px;
+    border-right: 8px solid rgb(56, 56, 161);
+    align-items: center;
+    padding: 10px;
+    text-shadow: 0 0 20px rgb(238, 46, 238);
 }
 
-a {
-    text-decoration: none;
-    color: aliceblue;
+.flex-about p {
+    font-size: 20px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.flex-work {
+    min-height: 1000px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 15px;
+
+}
+.flex-work h2 {
+    font-size: 40px;
+    border-right: 8px solid rgb(56, 56, 161);
+    align-items: center;
+    padding: 10px;
+    text-shadow: 0 0 20px rgb(238, 46, 238);
+}
+
+.flex-contact {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
 }
+
+.flex-contact h2 {
+    font-size: 40px;
+    border-right: 8px solid rgb(56, 56, 161);
+    align-items: center;
+    padding: 10px;
+    text-shadow: 0 0 20px rgb(238, 46, 238);
+}
+
+.address {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.address a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 55px;
+    margin-left: 20px;
+    color: silver;
+    text-shadow: 0 0 20px rgb(238, 46, 238);
+}
+
+
